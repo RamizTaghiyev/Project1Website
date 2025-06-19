@@ -235,3 +235,19 @@ header{
   background-color: hsl(49deg 98% 60%);
   color:black
 }
+
+
+
+.getApp{
+  background-color: rgba(242, 244, 247, 1);
+    border-radius: 24px;
+    text-align: center;
+
+}
+
+
+
+/* 
+.row {
+
+} */
