@@ -251,3 +251,16 @@ header{
 .row {
 
 } */
+
+
+.outer{
+display: table;
+table-layout: fixed;
+
+}
+.outer div[class*="col"]{
+display: table-cell;
+padding: 1px;
+}
+.col1{ background: rgba(255, 0, 0, 0);}
+.col2{ background: rgba(0, 0, 255, 0);}
