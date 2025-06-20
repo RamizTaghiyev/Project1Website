@@ -367,6 +367,8 @@ font-size: 64px;
 line-height: 117%;
 letter-spacing: -3%;
 color: white;
+margin-bottom: 2%;
+
 }
 
 
@@ -378,6 +380,8 @@ line-height: 82%;
 letter-spacing: 3%;
 text-align: left;
 color: rgba(158, 158, 158, 1);
+margin-left: 1%;
+margin-top: 2%;
 
 }
 
