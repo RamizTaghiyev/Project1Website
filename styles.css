@@ -208,6 +208,9 @@ header{
 }
 
 
+.logo{
+  margin-right: 2%;
+}
 
 
 .GenCardButton {
@@ -223,6 +226,9 @@ header{
 }
 
 
+.comment{
+  margin-left: 25%;
+}
 
 .getApp{
   background-color: rgba(242, 244, 247, 1);
@@ -252,17 +258,38 @@ text-align: center;
 }
 
 
-.outer{
-display: table;
-table-layout: fixed;
+.ihateyousm
+{
+  margin-left: 0px;
+}
 
-background: linear-gradient(180deg, rgba(249, 250, 251, 1) 83%, rgba(255,255,255,1) 83%, rgba(255,255,255,1) 100%);
+.jagermeister
+{
+    margin-left: 0px;
+      text-align: left;
+
+
+}
+
+.Eyeless{
+  align-self: auto;
+}
+
+.sic{
+  text-align: left;
+}
+
+.outer{
+/* display: table; */
+/* table-layout: fixed; */
+
+background: linear-gradient(rgba(249, 250, 251, 1));
 
 /* display: flex; */
 flex-direction: column;
 align-items: center;
-padding: 45px 45px 5px;
-gap: 2px;
+/* padding: 45px 45px 5px;
+gap: 2px; */
 
 /* width: 200px;
 height: 300px; */
@@ -300,6 +327,8 @@ padding: 1px;
 .mapimg{
   align-self: center;
   margin-left: 250px;
+  width: 200px;
+  height: 300px;
 }
 
 
@@ -360,7 +389,11 @@ color: rgba(158, 158, 158, 1);
 
 
 
-
+.manycompanies
+{
+  text-align: center;
+  margin-left: 25%;
+}
 
 
 /* 
