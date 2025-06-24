@@ -20,6 +20,13 @@ header {
     margin: 0 auto;
 }
 
+.introButtons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+}
+
 h1 {
     font-size: 30px;
     margin-bottom: 1em;
@@ -85,8 +92,7 @@ p {
 }
 
 .topnav a:hover {
-    /* background-color: #FFDD33; */
-        background-color: #55c2c3;
+background-color: hsl(49deg 98% 60%);
     color: black;
     border-radius: 24px;
 }
@@ -101,50 +107,51 @@ html {
 
 
 button {
-    padding: 0 10px;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    border: solid 0px black;
-    font-weight: 700;
-    font-size: 13px;
-    /* background-color: hsl(49deg 98% 60%); */
-        background-color: #55c2c3;
-    border-radius: 50px;
-    transition: all 0.5s ease;
-    width: 150px;
-    height: 50px;
-    /* Button */
+background-color: hsl(49deg 98% 60%);
 
-    /* Auto layout */
+  background-color: hsl(49deg 98% 60%);
+  padding: 14px 28px;
+  border: none;
+  border-radius: 24px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
 
-    /*
-  display: flex;
-  flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 12px 20px;
-gap: 8px;
 
-width: 149px;
-height: 50px;
+}
 
- font color/dark 800 
-border-radius: 32px;
+.primary-button {
+background-color: hsl(49deg 98% 60%);
+    color: #000;
+}
 
-/* Inside auto layout 
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
-*/
+.primary-button:hover {
+    background-color: #000;
+    color: white;
+}
+
+.GenCardButton {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #e5e7eb;
+    font-size: 16px;
+    text-align: center;
+
 
 }
 
 
-button:hover {
-    background-color: hsl(0, 0%, 0%);
-    /* change to your desired color */
-    color: white
+ 
+.GenCardButton:hover {
+background-color: hsl(49deg 98% 60%);
+    color: black;
+    font-size: 15px;
+    
 }
 
 
@@ -207,8 +214,7 @@ footer {
 }
 
 .loginButton:hover {
-    /* background-color: hsl(49deg 98% 60%); */
-        background-color: #55c2c3;
+background-color: hsl(49deg 98% 60%);
     color: black
 }
 
@@ -219,8 +225,7 @@ footer {
 }
 
 .openAccButton:hover {
-    /* background-color: hsl(49deg 98% 60%); */
-        background-color: #55c2c3;
+background-color: hsl(49deg 98% 60%);
     color: black
 }
 
@@ -230,28 +235,7 @@ footer {
 }
 
 
-.GenCardButton {
-    background-color: #ffffff;
-    color: #000000;
-    border: 2px solid rgba(239, 239, 239, 1);
-        font-size: 12px;
-        text-align: center;
-        text-display: flex;
-            /* display: inline-block;
-  vertical-align: middle; */
-            border: 1px solid #333 !important;
 
-}
-
-
-
-.GenCardButton:hover {
-    /* background-color: hsl(49deg 98% 60%); */
-    background-color: #55c2c3;
-    color: black;
-    font-size: 10px;
-    
-}
 
 
 .trustedRequiem{
@@ -264,7 +248,10 @@ margin-left: 58%;
     margin-left: 25%;
 }
 .mobilebruh{
-        margin-left: 30%;
+        margin-left: 0%;
+text-align:center;
+display:flex;
+font-size: 25px;
 
 }
 
@@ -272,7 +259,7 @@ margin-left: 58%;
     background-color: rgba(242, 244, 247, 1);
     border-radius: 24px;
     text-align: center;
-    background-image: "http://www.w3.org/2000/svg";
+
     
 
 }
@@ -292,16 +279,12 @@ margin-left: 58%;
 
 
 .feelthebest {
-    font-family: Helvetica Now Display;
-    /* font-weight: 500; */
-    font-size: 30px;
-    /* line-height: 117%;
-    letter-spacing: -3%; */
-    text-align: center;
-    margin-left: 30%;
-    margin-right: 30%;
-
-
+            font-family: 'Helvetica Now Display', -webkit-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 500;
+            font-size: clamp(24px, 4vw, 48px);
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #000000;
 }
 
 
@@ -325,48 +308,87 @@ margin-left: 58%;
     text-align: left;
 }
 
-.outer {
-    /* display: table; */
-    /* table-layout: fixed; */
-
-    background: linear-gradient(rgba(249, 250, 251, 1));
-
-    /* display: flex; */
-    flex-direction: column;
-    align-items: center;
-    /* padding: 45px 45px 5px;
-gap: 2px; */
-
-    /* width: 200px;
-height: 300px; */
-
-    border-radius: 32px;
-
-}
-
-.outer div[class*="col"] {
-    display: table-cell;
-    padding: 1px;
-/* gap: 20px;
-    margin-right: 15px;  */
-}
-
-.col1 {
-    background: rgba(242, 244, 247, 1);
-    border-radius: 24px;
-    /* gap: 2%;
-    margin-right: 15px; */
-
-}
-
-.col2 {
-    background: rgba(242, 244, 247, 1);
-    border-radius: 24px;
-    /* gap: 2%; */
+        .outer {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            align-items: stretch;
+            flex-wrap: wrap;
+        }
 
 
-}
 
+    .col1, .col2 {
+            background: rgba(242, 244, 247, 1);
+            border-radius: 24px;
+            padding: 2.5rem;
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .col1:hover, .col2:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            width: 40px;
+            height: 40px;
+
+            background: #55c2c3;
+            border-radius: 12px;
+            align-self: flex-start;
+            padding: 2.5rem;
+        }
+
+        .col1 h1, .col2 h1 {
+            font-family: 'Helvetica Now Display', -webkit-system, BlinkMacSystemFont, sans-serif;
+            font-size: clamp(20px, 3vw, 28px);
+            font-weight: 600;
+            color: #000000;
+            margin: 0;
+            line-height: 1.3;
+            padding: 2.5rem;
+        }
+
+        .feature-description {
+            font-size: 16px;
+            color: #6B7280;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .feature-image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-top: auto;
+            object-fit: contain;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .outer {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            
+            .col1, .col2 {
+                min-width: unset;
+                max-width: unset;
+            }
+            
+            .feelthebest {
+                margin-bottom: 2rem;
+            }
+        }
 
 .review {
     padding: 30px; 
@@ -391,6 +413,7 @@ margin-right: 25%;
 .freeTransfer {
     background-color: rgba(249, 250, 251, 1);
     padding: 2%;
+    border-radius: 24px;
 }
 
 
@@ -402,11 +425,16 @@ margin-right: 25%;
 }
 
 
+}
 
 .Overall {
-    background-color: rgba(242, 244, 247, 1);
-    border-radius: 24px;
-
+  background-color: rgba(242, 244, 247, 1);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;        
+  margin: 3rem 0;
 }
 
 .outro {
@@ -612,7 +640,7 @@ hr {
 
 .manycompanies {
     text-align: center;
-    margin-left: 25%;
+    margin-left: 0%;
 }
 
 .container {
@@ -620,6 +648,8 @@ hr {
     max-width: 1200px; 
     margin: 0 auto;
     overflow-x: hidden;
+            padding: 2rem 1rem;
+
 }
 
 
@@ -628,4 +658,69 @@ hr {
   display: block;
   margin: auto;
   width: 50%;
+}
+
+
+
+.meter-line-inline {
+  text-align: right; 
+}
+
+.meter-icon,
+.million.inline {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.meter-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 4px;
+}
+
+.million.inline {
+  margin: 0;
+ text-align: right; 
+}
+
+
+
+
+
+
+
+
+
+
+.freeTransfer .container-map {
+  display: flex;
+  align-items: center;         
+  justify-content: space-between;
+  flex-wrap: wrap;              
+  gap: 2rem; 
+	                   
+}
+
+
+.freeTransfer .text-content,
+.freeTransfer .transfer-visual {
+  flex: 1 1 45%;               
+  max-width: 500px;             
+}
+
+
+.freeTransfer .icon {
+  display: block;
+  margin-bottom: 1rem;
+  width: 30px;
+  height: 30px;
+}
+
+.freeTransfer .sic {
+  margin-bottom: 0.5rem;
+}
+
+.freeTransfer .create {
+  color: #98A2B3;
+  line-height: 1.4;
 }
