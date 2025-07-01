@@ -1135,3 +1135,20 @@ footer.outro-bottom p {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+
+/* phone up to 600px — single‐column everywhere */
+@media (max-width: 600px) {
+  .col1, .col2 { width: 100%; }
+}
+
+/* small tablet: 600–900px */
+@media (min-width: 600px) and (max-width: 900px) {
+  .outer { flex-direction: column; }
+}
+
+/* desktop: 900px+ */
+@media (min-width: 900px) {
+  .outer { flex-direction: row; }
+}
