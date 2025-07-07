@@ -7,16 +7,22 @@
 
 
     <title>Finzo</title>
+	
+	
     <link rel="icon" type="image/x-icon" href="assets\finzologo.ico">
+
 
     <link rel="stylesheet" href="styles.css" />
 
 </head>
+			
+
 
 <body>
 
     <div class="container">
         <header>
+            <div class="header-content">
             <div id="logo" class="logo">
                 <img
         src="assets\finzo.png"
@@ -25,65 +31,85 @@
       />
             </div>
 
-            <nav class="topnav">
-                <ul class= "menu">
-                    <li>
-                        <a class="active" href="#products">Products <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M17.6747 7.87695L12.0645 13.4872C11.4019 14.1497 10.3177 14.1497 9.65515 13.4872L4.04492 7.87695" stroke="#292D32" stroke-width="1.2907" stroke-
+                <nav class="topnav">
+                    <ul class="menu">
+                        <li class="dropdown">
+                            <button class="dropbtn">
+                                Products 
+                                <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.6747 7.87695L12.0645 13.4872C11.4019 14.1497 10.3177 14.1497 9.65515 13.4872L4.04492 7.87695" stroke="#292D32" stroke-width="1.2907" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Cozy Couch</a>
+                                <a href="#">Great Table</a>
+                                <a href="#">Small Chair</a>
+                                <a href="#">Shiny Shelf</a>
+                                <a href="#">Invisible Nothing</a>
+                            </div>
+                        </li>
 
-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</a>
-    <ul>
-    <li><a href="">Cozy Couch</a></li>
-    <li><a href="">Great Table</a></li>
-    <li><a href="">Small Chair</a></li>
-    <li><a href="">Shiny Shelf</a></li>
-    <li><a href="">Invisible Nothing</a></li>
-    </ul>
-                    </li>
-                    <li>
-                        <a href="#company">Company<svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M17.6747 7.87695L12.0645 13.4872C11.4019 14.1497 10.3177 14.1497 9.65515 13.4872L4.04492 7.87695" stroke="#292D32" stroke-width="1.2907" stroke-
+                        <li class="dropdown">
+                            <button class="dropbtn">
+                                Company
+                                <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.6747 7.87695L12.0645 13.4872C11.4019 14.1497 10.3177 14.1497 9.65515 13.4872L4.04492 7.87695" stroke="#292D32" stroke-width="1.2907" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">The Team</a>
+                                <a href="#">History</a>
+                                <a href="#">Vision</a>
+                            </div>
+                        </li>
 
-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</a>
-                            <ul>
-    <li><a href="">The Team</a></li>
-    <li><a href="">History</a></li>
-    <li><a href="">Vision</a></li>
-    </ul>
-                    </li>
-                    <li>
-                        <a href="#features">Features<svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M17.6747 7.87695L12.0645 13.4872C11.4019 14.1497 10.3177 14.1497 9.65515 13.4872L4.04492 7.87695" stroke="#292D32" stroke-width="1.2907" stroke-
+                        <li class="dropdown">
+                            <button class="dropbtn">
+                                Features
+                                <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.6747 7.87695L12.0645 13.4872C11.4019 14.1497 10.3177 14.1497 9.65515 13.4872L4.04492 7.87695" stroke="#292D32" stroke-width="1.2907" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Feature 1</a>
+                                <a href="#">Feature 2</a>
+                                <a href="#">Feature 3</a>
+                            </div>
+                        </li>
 
-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</a>
-                    </li>
-                    <li>
-                        <a href="#pricing">Pricing<svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M17.6747 7.87695L12.0645 13.4872C11.4019 14.1497 10.3177 14.1497 9.65515 13.4872L4.04492 7.87695" stroke="#292D32" stroke-width="1.2907" stroke-
+                        <li class="dropdown">
+                            <button class="dropbtn">
+                                Pricing
+                                <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.6747 7.87695L12.0645 13.4872C11.4019 14.1497 10.3177 14.1497 9.65515 13.4872L4.04492 7.87695" stroke="#292D32" stroke-width="1.2907" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Basic Plan</a>
+                                <a href="#">Premium Plan</a>
+                                <a href="#">Enterprise</a>
+                            </div>
+                        </li>
 
-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</a>
-                    </li>
-                    <li>
-                        <a href="#support">Support<svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M17.6747 7.87695L12.0645 13.4872C11.4019 14.1497 10.3177 14.1497 9.65515 13.4872L4.04492 7.87695" stroke="#292D32" stroke-width="1.2907" stroke-
+    <li class="dropdown">
+<button class="dropbtn"> Support
+<svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.6747 7.87695L12.0645 13.4872C11.4019 14.1497 10.3177 14.1497 9.65515 13.4872L4.04492 7.87695" stroke="#292D32" stroke-width="1.2907" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <div class="dropdown-content">
+<a href="#">Help Center</a>
+<a href="#">Contact Us</a>
+<a href="#">FAQ</a>
+</div>
+                        </li>
+                    </ul>
+                </nav>
 
-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</a>
-                    </li>
-                </ul>
-            </nav>
-            <div id="header-buttons">
-                <button class="loginButton" type="button" onclick="alert('LOGGED IN!!!')">Login</button>
-                <button class="openAccButton" type="button" onclick="alert('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"> Open Account</button>
+                <div id="header-buttons">
+                    <button class="loginButton" type="button" onclick="alert('Login clicked!')">Login</button>
+                    <button class="openAccButton" type="button" onclick="alert('Open Account clicked!')">Open Account</button>
+                </div>
             </div>
         </header>
 
@@ -324,6 +350,7 @@ Check our other product features
 </div>
             <br><br><br>
 
+<div class="lazy-block">
 
 
             <div>
@@ -363,7 +390,7 @@ Check our other product features
                 </div>
   </div>
 
-
+</div>
 
 
 
@@ -379,6 +406,7 @@ Check our other product features
 
 
 
+<div class="lazy-block">
 
 
 
@@ -453,7 +481,10 @@ height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
     </div>
             </div>
 
+</div>
 
+
+<div class="lazy-block">
 
 
             <h1 class="mainoutro">Save smart. Achieve more.</h1>
@@ -575,6 +606,8 @@ height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <button class="outroButton">Contact</button>
         </li>
     </ul>
+</div>
+
 </div>
 
 </div>
