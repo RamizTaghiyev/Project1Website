@@ -78,6 +78,7 @@ h2 {
   margin-bottom: 5px;
   margin-right: 5px;
   margin-left: 350px;
+  padding-right: 310px;
 }
 
 h3 {
@@ -106,7 +107,7 @@ p {
         }
 
 .topnav a {
-  float: left;
+
   color: #000000;
   text-align: center;
   padding: 14px 16px;
@@ -122,6 +123,45 @@ background-color: hsl(49deg 98% 60%);
 
 .topnav a.active {
   color: rgb(0, 0, 0);
+}
+
+
+.topnav .icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .topnav .menu {
+    display: none;
+    flex-direction: column; 
+    width: 100%;
+    background-color: #333;  
+  }
+
+
+  .topnav .icon {
+    display: block;
+    margin-left: auto;
+    color: black;
+    font-size: 24px;
+    padding: 14px 16px;
+    cursor: pointer;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .topnav.responsive .menu {
+    display: flex;
+  }
+
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }
 
 
@@ -290,7 +330,7 @@ b {
   text-align: left;
   font-family: Helvetica Now Display;
   font-weight: 500;
-  font-size: 45px;
+  font-size: 65px;
 
 }
 
@@ -398,6 +438,7 @@ footer {
 .trustedRequiem{
 text-align: right;
 margin-left: 58%;
+padding-left: 100px;
 }
 
 
@@ -619,15 +660,6 @@ padding: 45px;
 
 
 
-.feelthebest {
-          font-family: 'Helvetica Now Display', -webkit-system, BlinkMacSystemFont, sans-serif;
-          font-weight: 500;
-          font-size: clamp(24px, 4vw, 48px);
-          text-align: center;
-          margin-bottom: 3rem;
-          color: #000000;
-		  font-ize: 64px;
-}
 
 
 
@@ -729,14 +761,13 @@ padding: 45px;
 .feelthebest {
 display: flex;
     font-family: 'Helvetica Now Display', -webkit-system, BlinkMacSystemFont, sans-serif;
-    font-weight: 500;
     font-size: clamp(24px, 4vw, 48px);
     text-align: center;
     margin: 0 auto 3rem auto;
     color: #000000;
     width: 100%;
     max-width: 1200px;
-    padding: 0 20px;
+    padding: 0 330px;
     box-sizing: border-box;
 	text-align: center;
 align-items: center;
@@ -1111,9 +1142,11 @@ hr {
 
 .yapping {
 	text-align:center;
+	padding: 0 400px;
 }
 
 .manycompanies {
+	padding: 0 310px;
 
   text-align: center;
 }
@@ -1321,4 +1354,53 @@ footer.outro-bottom p {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+}
+
+
+
+@media (max-width: 480px) {
+  /* remove monster left-margins & fixed widths */
+  .veryfirsttext,
+  .yapping,
+  .manycompanies,
+  .feelthebest {
+    margin: 1rem auto;
+    padding: 0 1rem;
+    width: auto;
+  }
+  .introButtons {
+    margin: 1rem auto;
+    width: 100%;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .button-container {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  /* header stacking */
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  /* nav menu full width */
+  .topnav.responsive .menu {
+    width: 100%;
+  }
+  /* freeTransfer: stack the image and text */
+  .freeTransfer .container-map {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  /* companies strip */
+  .companiesimg {
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* trim that huge getApp padding */
+  .getApp {
+    padding: 4rem 1rem;
+  }
 }

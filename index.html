@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     
-	<meta name="viewport" content="width=1280, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
     <title>Finzo</title>
@@ -14,6 +14,11 @@
 
 
     <link rel="stylesheet" href="styles.css" />
+	<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+
 
 </head>
 			
@@ -32,7 +37,7 @@
       />
             </div>
 
-                <nav class="topnav">
+                <nav class="topnav" id="myTopnav">
                     <ul class="menu">
                         <li class="dropdown">
                             <button class="dropbtn">
@@ -42,11 +47,12 @@
                                 </svg>
                             </button>
                             <div class="dropdown-content">
-                                <a href="#">Cozy Couch</a>
-                                <a href="#">Great Table</a>
-                                <a href="#">Small Chair</a>
-                                <a href="#">Shiny Shelf</a>
-                                <a href="#">Invisible Nothing</a>
+                                <a href="#">Subscriptions</a>
+                                <a href="#">Devices</a>
+                                <a href="#">Gifts</a>
+                                <a href="#">Item 4</a>
+                                <a href="#">Item 5</a>
+								
                             </div>
                         </li>
 
@@ -58,9 +64,9 @@
                                 </svg>
                             </button>
                             <div class="dropdown-content">
-                                <a href="#">The Team</a>
-                                <a href="#">History</a>
-                                <a href="#">Vision</a>
+                                <a href="#">Team</a>
+                                <a href="#">Info 2</a>
+                                <a href="#">Info 3</a>
                             </div>
                         </li>
 
@@ -86,9 +92,9 @@
                                 </svg>
                             </button>
                             <div class="dropdown-content">
-                                <a href="#">Basic Plan</a>
+                                <a href="#">Student Plan</a>
+                                <a href="#">Standart Plan</a>
                                 <a href="#">Premium Plan</a>
-                                <a href="#">Enterprise</a>
                             </div>
                         </li>
 
@@ -105,6 +111,13 @@
 </div>
                         </li>
                     </ul>
+					
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+	
+ </a>
+
+					
                 </nav>
 
                 <div id="header-buttons">
@@ -136,7 +149,7 @@
             </div>
 
             <div class="introButtons" style="height: 50px; width: 550px; margin-left: 320px;">
-                <button class="firstButton" type="button" onclick="alert('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')">Open Account</button>
+                <button class="firstButton" type="button" onclick="alert('You have Opened Account!')">Open Account</button>
                 <button class="GenCardButton" type="button" onclick="alert('CARD GENERATED!!!')">Generate your card</button>
             </div>
 
@@ -777,6 +790,7 @@ height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 
  <script src="index.js"></script> 
  <script src="mobileport.js"></script> 
+<script src="nav-toggle.js"></script>
 
 
 
